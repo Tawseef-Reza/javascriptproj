@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    color: green;
+    font-size: 40px;
+}
+body {
+    font-family: "trebuchet ms";
+}
+table {
+    border: 2px solid grey;
+}
+td {
+    border: 2px solid grey;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-align:center;
+}
+#adder, #saver, #starter {
+    padding: 30px;
+    border: none;
+    font-size: 40px;
+}
+#adder {
+    background-color:blue;
+    margin-right: 30px;
+}
+#adder:hover {
+    background-color:dodgerblue; 
+}
+#saver {
+    background-color:darkred;
+    margin-left: 30px;
+}
+#saver:hover {
+    background-color:crimson;
+}
+#starter {
+    background-color:darkolivegreen;
+}
+#starter:hover {
+    background-color:lawngreen;
+}
