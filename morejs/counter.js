@@ -547,14 +547,17 @@ bodyboi.addEventListener("keydown", function(event) {
   }
     
     else if (event.key == 'Backspace') {
-        typebackspace();
+      document.getElementById("backspacer").click();
     }
     else if (event.key == ' ') {
         event.preventDefault();
-        typespace();
-    }
+      document.getElementById("spacer").click();
+      }
     else if (event.key == '-') {
-      	typedash();
+      document.getElementById("dasher").click();
+      }
+    else if (event.key == 'Enter') {
+      document.getElementById("submitter").click();
     }
     else {
         console.log(event.key);
@@ -607,6 +610,7 @@ function submitter1() {
     //console.log(responseboi.innerHTML);
     //theresponseofall.response = responseboi.innerHTML;
     document.getElementById("submitter").disabled = true;
+    document.getElementById("usershouldscroll").innerHTML = `You should scroll down`;
     document.getElementById("buttoninstructions").innerHTML = `Instructions: Press <span style="color: darkolivegreen;">Start</span> to begin, Press <span style="color: blue;">Add 1</span> to add 1 instance recorded, Press <span style="color: darkred;">Save</span> to end`;
     document.getElementById("nameofcount").innerHTML = responseboi.innerHTML;
     const listofbuttons = document.getElementsByClassName("epicbutton");

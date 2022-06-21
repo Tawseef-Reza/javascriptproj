@@ -25,7 +25,11 @@
     border-color:brown;
     font-weight:bold;
 }
-
+#usershouldscroll {
+    text-align: center;
+    margin-top: -20px;
+    color: orangered;
+}
 #nameofcount {
     text-align: center;
 }
