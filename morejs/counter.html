@@ -4,13 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Counter</title>
     <link rel="stylesheet" href="counter.css">
 </head>
-<body>
-    
-    <h2 id="dater" style="float:left;"> </h2>
-    <h1> People Entered: </h1> 
+<body id="actual" onload="loader()">
+        <div style="display:none;"></div>
+    <center>
+        <h1> Welcome to the Counting Website!</h1>
+        <h2> Click on the screen keyboard or type </h2>
+        <div id="maindiv">
+            <button id="q" class="epicbutton" onclick="typeq()">q</button>
+            <button id="Q" class="epicbuttonold" onclick="typeQ()">Q</button>
+            <button id="w" class="epicbutton" onclick="typew()">w</button>
+            <button id="W" class="epicbuttonold" onclick="typeW()">W</button>
+            <button id="e" class="epicbutton" onclick="typee()">e</button>
+            <button id="E" class="epicbuttonold" onclick="typeE()">E</button>
+            <button id="r" class="epicbutton" onclick="typer()">r</button>
+            <button id="R" class="epicbuttonold" onclick="typeR()">R</button>
+            <button id="t" class="epicbutton" onclick="typet()">t</button>
+            <button id="T" class="epicbuttonold" onclick="typeT()">T</button>
+            <button id="y" class="epicbutton" onclick="typey()">y</button>
+            <button id="Y" class="epicbuttonold" onclick="typeY()">Y</button>
+            <button id="u" class="epicbutton" onclick="typeu()">u</button>
+            <button id="U" class="epicbuttonold" onclick="typeU()">U</button>
+            <button id="i" class="epicbutton" onclick="typei()">i</button>
+            <button id="I" class="epicbuttonold" onclick="typeI()">I</button>
+            <button id="o" class="epicbutton" onclick="typeo()">o</button>
+            <button id="O" class="epicbuttonold" onclick="typeO()">O</button>
+            <button id="p" class="epicbutton" onclick="typep()">p</button>
+            <button id="P" class="epicbuttonold" onclick="typeP()">P</button>
+            <br>
+            <button id="a" class="epicbutton" onclick="typea()">a</button>
+            <button id="A" class="epicbuttonold" onclick="typeA()">A</button>
+            <button id="s" class="epicbutton" onclick="types()">s</button>
+            <button id="S" class="epicbuttonold" onclick="typeS()">S</button>
+            <button id="d" class="epicbutton" onclick="typed()">d</button>
+            <button id="D" class="epicbuttonold" onclick="typeD()">D</button>
+            <button id="f" class="epicbutton" onclick="typef()">f</button>
+            <button id="F" class="epicbuttonold" onclick="typeF()">F</button>
+            <button id="g" class="epicbutton" onclick="typeg()">g</button>
+            <button id="G" class="epicbuttonold" onclick="typeG()">G</button>
+            <button id="h" class="epicbutton" onclick="typeh()">h</button>
+            <button id="H" class="epicbuttonold" onclick="typeH()">H</button>
+            <button id="j" class="epicbutton" onclick="typej()">j</button>
+            <button id="J" class="epicbuttonold" onclick="typeJ()">J</button>
+            <button id="k" class="epicbutton" onclick="typek()">k</button>
+            <button id="K" class="epicbuttonold" onclick="typeK()">K</button>
+            <button id="l" class="epicbutton" onclick="typel()">l</button>
+            <button id="L" class="epicbuttonold" onclick="typeL()">L</button> 
+            <br>
+            <button id="z" class="epicbutton" onclick="typez()">z</button>
+            <button id="Z" class="epicbuttonold" onclick="typeZ()">Z</button>
+            <button id="x" class="epicbutton" onclick="typex()">x</button>
+            <button id="X" class="epicbuttonold" onclick="typeX()">X</button>
+            <button id="c" class="epicbutton" onclick="typec()">c</button>
+            <button id="C" class="epicbuttonold" onclick="typeC()">C</button>
+            <button id="v" class="epicbutton" onclick="typev()">v</button>
+            <button id="V" class="epicbuttonold" onclick="typeV()">V</button>
+            <button id="b" class="epicbutton" onclick="typeb()">b</button>
+            <button id="B" class="epicbuttonold" onclick="typeB()">B</button>
+            <button id="n" class="epicbutton" onclick="typen()">n</button>
+            <button id="N" class="epicbuttonold" onclick="typeN()">N</button>
+            <button id="m" class="epicbutton" onclick="typem()">m</button>
+            <button id="M" class="epicbuttonold" onclick="typeM()">M</button> 
+            <br>
+        <button class="epicbutton" onclick="typebackspace()">backspace</button> <button class="epicbutton"onclick="typespace()">space</button> <button class="epicbutton" onclick="typedash()">-</button>
+        <h3 id="fullthingcounted">Type thing + action you want to count (ex: People Entered, Frogs Jumped)<span style="color:chocolate;">:</span> <span id="response"></span> <button id="submitter" class="epicbutton" onclick="submitter1()">Submit</button></h3>
+        </div>
+        </center>
+    <!--<h2 id="dater" style="float:left;"> </h2>-->
+    <h3 id="buttoninstructions"></h3>
+    <h1 id="nameofcount"> <!---People---> <!---Entered--> </h1> 
     <center>
     <button class="button" id="starter" onclick="startit()"> Start </button> <br> <br>
     
@@ -19,9 +83,13 @@
 
     <h2 id="number">0</h2>
     <h3 id="started"></h3>
-    <table id="saved">
-        <tr> <td>Number</td> <td>Number of People</td> <td>Starting Time</td><td>Ending Time</td></tr>
+    <table id="saved1">
+        <tr> <td>Number</td> <td>Number of Things</td> <td>Starting Time</td><td>Ending Time</td></tr>
     </table> 
+    <br>
+    <br>
+    <br>
+    <h4> Reload the Page to enter a new thing!</h4>
     <!--
 
     -->
